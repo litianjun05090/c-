@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+//九九乘法表
+
+ 
+int main(int argc, char *argv[]) {
+	int n;
+	int i,j;
+	scanf("%d",&n);
+	for (i=1;i<=n;i++){
+		for (j=1;j<=i;j++){
+			if(i==j){
+				printf("%d*%d=%d  \n",j,i,i*j);
+			}
+			else{
+				printf("%d*%d=%d   ",j,i,i*j);
+	
+			}
+			
+		}
+	}
+	
+	return 0;
+}
